@@ -17,3 +17,16 @@
 #         l += gain[i] 
 #         a.append(l) 
 #       return max(a)
+
+# 1991
+
+# class Solution:
+#     def findMiddleIndex(self, nums: List[int]) -> int:
+#         l = 0 
+#         t = sum(nums)
+#         for r,n in enumerate(nums):
+#           if l == t -l-n:
+#             return r 
+#           l += n 
+#         return -1
+
