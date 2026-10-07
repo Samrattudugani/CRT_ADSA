@@ -60,10 +60,9 @@ def nge(arr):
 arr = [4, 12, 5, 3, 1, 2, 5, 3, 1, 2, 4, 6]
 print(nge(arr))
 
-
-
-
-
+# git add .
+# git commit -m "Updated project"
+# git push origin main
 
 
 
