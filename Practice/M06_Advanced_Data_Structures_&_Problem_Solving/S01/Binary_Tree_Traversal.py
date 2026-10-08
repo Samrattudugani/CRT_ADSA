@@ -82,3 +82,32 @@ postorder(root)
 
 print("\nBFS TRAVERSAL:")
 bfs(root)
+
+'''
+94.
+class Solution:
+    def inorderTraversal(self, root: TreeNode | None) -> list[int]:
+      r = []
+      def inorder(root):
+        if root:
+          inorder(root.left)
+          r.append(root.val)
+          inorder(root.right)
+      inorder(root)
+      return r
+'''
+
+from collections import deque
+def levelot(root):
+    if root is None:
+        return
+    d = deque([root])
+    while d:
+        node = d.popleft()
+        print(node.data,end=" -> ")
+        if node.left:
+            d.append(node.left)
+        if node.right:
+            d.append(node.right)
+print("\nLevel order traversal using deque:")
+levelot(root)
